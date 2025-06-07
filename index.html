@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Business Name</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav id="sidemenu">
+            <img src="images/logo.png" class="logo">
+            <ul>
+                <li><a href="#header">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Your One-Stop Shop for Quality Machines and Parts</p>
+            <h1>Welcome to <span>Eddie Bongo Investment </span><br>Power Saw Machines, Outboard Machines, Generator Parts, and More</h1>
+        </div>
+    </div>
+</div>
+
+<div id="products">
+    <div class="container">
+        <h1 class="sub-title">Our Products</h1>
+        <div class="product-list">
+            <div class="product">
+                <img src="images/powersawe.png" alt="Power Saw Machine">
+                <div class="layer">
+                    <h3>Power Saw Machines</h3>
+                    <p>High-quality power saw machines and parts for all your cutting needs.</p>
+                </div>
+            </div>
+            <div class="product">
+                <img src="images/outboard.png" alt="Outboard Machine">
+                <div class="layer">
+                    <h3>Outboard Machines</h3>
+                    <p>Reliable outboard machines and parts for marine applications.</p>
+                </div>
+            </div>
+            <div class="product">
+                <img src="images/kama.png" alt="Generator Parts">
+                <div class="layer">
+                    <h3>Generator Parts</h3>
+                    <p>Durable generator parts to keep your power supply running smoothly.</p>
+                </div>
+            </div>
+            <div class="product hidden">
+                <img src="images/powersaw-sparepart.png" alt="Other Parts">
+                <div class="layer">
+                    <h3>Powersaw Spare Parts</h3>
+                    <p>Discover a complete range of high-quality spare parts for your powersaw. From chains and guide bars to spark plugs and filters, we provide durable and reliable components to keep your equipment running at peak performance.</p>
+                </div>
+            </div>   
+            <div class="product">
+                <img src="images/Kama con-rod 186,188.png" alt="Kama Con-Rod 186,188">
+                <div class="product-info">
+                    <h3>Kama Con-Rod 186,188 etc</h3>
+                    <p>High-quality Kama con-rods engineered for superior durability and performance in demanding applications.</p>
+                </div>
+            </div>  
+            <div class="product ">
+                <img src="images/Kama piston &rings.png" alt="Kama Piston and Rings">
+                <div class="product-info">
+                    <h3>Kama Piston and Rings</h3>
+                    <p>High-quality Kama piston and rings for efficient engine performance.</p>
+                </div>
+            </div>
+            <div class="product">
+                <img src="images/Kama kick starter.png" alt="Kama Kick Starter">
+                <div class="product-info">
+                    <h3>Kama Kick Starter</h3>
+                    <p>Durable and efficient Kama kick starter for reliable engine ignition and smooth operation.</p>
+                </div>
+            </div>
+            <div class="product">
+                <img src="images/Power saw stihl bor,piston & rings.png" alt="Power Saw Stihl Bar, Piston & Rings">
+                <div class="product-info">
+                    <h3>Power Saw Stihl Bar, Piston & Rings</h3>
+                    <p>Premium quality Stihl bar, piston, and rings for high-performance and long-lasting power saw operation.</p>
+                </div>
+            </div>
+            <div class="product">
+                <img src="images/Kama air cleaner.png" alt="Kama Air Cleaner">
+                <div class="product-info">
+                    <h3>Kama Air Cleaner</h3>
+                    <p>Efficient Kama air cleaner designed to enhance engine performance by filtering dust and debris.</p>
+                </div>
+            </div>
+            <div class="product">
+                <img src="images/Kama diesel and oil filter.png" alt="Kama Diesel and Oil Filter">
+                <div class="product-info">
+                    <h3>Kama Diesel and Oil Filter</h3>
+                    <p>High-quality Kama diesel and oil filter for efficient filtration, ensuring engine longevity and optimal performance.</p>
+                </div>
+            </div>
+            <div class="product">
+                <img src="images/Generator fuel hose.png" alt="Generator Fuel Hose">
+                <div class="product-info">
+                    <h3>Generator Fuel Hose</h3>
+                    <p>Durable and flexible generator fuel hose designed for efficient fuel flow and leak prevention.</p>
+                </div>
+            </div>
+            <div class="product">
+                <img src="images/Kama complete nozzle 186,188 & 192.png" alt="Kama Complete Nozzle 186, 188 & 192">
+                <div class="product-info">
+                    <h3>Kama Complete Nozzle 186, 188 & 192</h3>
+                    <p>High-quality Kama complete nozzle for models 186, 188 & 192, ensuring efficient fuel atomization and engine performance.</p>
+                </div>
+            </div>  
+            <div class="product">
+                <img src="images/single coil.png" alt="Single Coil">
+                <div class="product-info">
+                    <h3>Single Coil</h3>
+                    <p>Premium quality single coil designed for optimal engine performance and reliable ignition. Perfect for maintaining consistent spark and ensuring smooth engine operation in various applications.</p>
+                </div>
+            </div>
+            <div class="product">
+                <img src="images/kama engine block.png" alt="Kama Engine Block">
+                <div class="product-info">
+                    <h3>Kama Engine Block</h3>
+                    <p>High-performance Kama engine block crafted from premium materials for exceptional durability and reliability. Engineered to withstand demanding conditions while maintaining optimal engine efficiency and power output.</p>
+                </div>
+            </div>
+            <div class="product">
+                <img src="images/powersaw flywheel.png" alt="Powersaw Flywheel">
+                <div class="product-info">
+                    <h3>Powersaw Flywheel</h3>
+                    <p>Precision-engineered powersaw flywheel designed for smooth operation and optimal performance. Features balanced weight distribution and durable construction to ensure reliable engine timing and consistent power delivery.</p>
+                </div>
+            </div>
+            <div class="product">
+                <img src="images/powersaw coil plate.png" alt="Powersaw Coil Plate">
+                <div class="product-info">
+                    <h3>Powersaw Coil Plate</h3>
+                    <p>High-quality powersaw coil plate engineered for optimal ignition system performance. Features precise mounting points and durable construction to ensure reliable spark generation and consistent engine operation.</p>
+                </div>
+            </div>
+            <div class="product">
+                <img src="images/GX 160 carburetor.png" alt="GX 160 Carburetor">
+                <div class="product-info">
+                    <h3>GX 160 Carburetor</h3>
+                    <p>Premium GX 160 carburetor designed for optimal fuel delivery and engine performance. Features precise fuel metering, easy adjustment capabilities, and durable construction for reliable operation in various applications.</p>
+                </div>
+            </div>
+            <div class="product">
+                <img src="images/GX 390 carburetor.png" alt="GX 390 Carburetor">
+                <div class="product-info">
+                    <h3>GX 390 Carburetor</h3>
+                    <p>High-performance GX 390 carburetor engineered for larger engines requiring superior fuel management. Features advanced fuel delivery system, precise air-fuel mixture control, and robust construction for demanding applications.</p>
+                </div>
+            </div>
+            <div class="product">
+                <img src="images/GX 160 White Tank.png" alt="GX 160 White Tank">
+                <div class="product-info">
+                    <h3>GX 160 White Tank</h3>
+                    <p>Premium GX 160 white fuel tank designed for optimal fuel storage and delivery. Features durable construction, corrosion resistance, and a clean white finish that maintains its appearance over time. Perfect for maintaining a professional look while ensuring reliable fuel supply.</p>
+                </div>
+            </div>
+            <div class="product">
+                <img src="images/Sthil Sprocket & Rims.png" alt="Stihl Sprocket & Rims">
+                <div class="product-info">
+                    <h3>Stihl Sprocket & Rims</h3>
+                    <p>High-quality Stihl sprocket and rims set designed for optimal chain drive performance. Features precision-engineered components for smooth operation, excellent durability, and perfect compatibility with Stihl chainsaws. Ensures reliable power transmission and extended equipment life.</p>
+                </div>
+            </div>
+            <div class="product">
+                <img src="images/sthil fan Blade.png" alt="Stihl Fan Blade">
+                <div class="product-info">
+                    <h3>Stihl Fan Blade</h3>
+                    <p>Premium Stihl fan blade engineered for optimal engine cooling and performance. Features aerodynamic design for efficient air flow, durable construction, and perfect balance for smooth operation. Essential for maintaining proper engine temperature and preventing overheating.</p>
+                </div>
+            </div>
+            <div class="product">
+                <img src="images/stihl clutch.png" alt="Stihl Clutch">
+                <div class="product-info">
+                    <h3>Stihl Clutch</h3>
+                    <p>High-performance Stihl clutch assembly designed for reliable power transmission and smooth engagement. Features precision-engineered components, excellent heat resistance, and perfect compatibility with Stihl chainsaws. Ensures optimal performance and extended service life.</p>
+                </div>
+            </div>
+            <div class="product">
+                <img src="images/Sthil carburetor.png" alt="Stihl Carburetor">
+                <div class="product-info">
+                    <h3>Stihl Carburetor</h3>
+                    <p>Premium Stihl carburetor engineered for precise fuel delivery and optimal engine performance. Features advanced fuel metering system, easy adjustment capabilities, and durable construction. Perfect for maintaining consistent power output and fuel efficiency in your Stihl equipment.</p>
+                </div>
+            </div>
+            <div class="product">
+                <img src="images/elemax.png" alt="Other Parts">
+                <div class="product-info">
+                    <h3>Other Parts</h3>
+                    <p>Explore our wide range of other parts for various applications.</p>
+                </div>
+            </div>
+        </div>
+        <h3>And Many More</h3>
+    </div>
+</div>
+
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">Our Services</h1>
+        <div class="services-list">
+            <div class="service-item">
+                <i class="fa-solid fa-tools"></i>
+                <h3>Repair & Maintenance</h3>
+                <p>Professional repair and maintenance services for all types of power saw machines, outboard engines, and generators.</p>
+            </div>
+            <div class="service-item">
+                <i class="fa-solid fa-gear"></i>
+                <h3>Parts Replacement</h3>
+                <p>Expert parts replacement using genuine components to ensure optimal performance and longevity.</p>
+            </div>
+            <div class="service-item">
+                <i class="fa-solid fa-screwdriver-wrench"></i>
+                <h3>Technical Support</h3>
+                <p>Comprehensive technical support and guidance for all your equipment needs.</p>
+            </div>
+            <div class="service-item">
+                <i class="fa-solid fa-truck"></i>
+                <h3>Delivery Service</h3>
+                <p>Reliable delivery service for parts and equipment to your location.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="why-choose-us">
+    <div class="container">
+        <h1 class="sub-title">Why Choose Us</h1>
+        <div class="features-grid">
+            <div class="feature-item">
+                <i class="fa-solid fa-medal"></i>
+                <h3>Quality Products</h3>
+                <p>We only stock and sell high-quality, reliable products from trusted manufacturers.</p>
+            </div>
+            <div class="feature-item">
+                <i class="fa-solid fa-clock"></i>
+                <h3>Quick Service</h3>
+                <p>Fast and efficient service to get your equipment back in working order.</p>
+            </div>
+            <div class="feature-item">
+                <i class="fa-solid fa-handshake"></i>
+                <h3>Expert Team</h3>
+                <p>Our experienced team provides professional service and expert advice.</p>
+            </div>
+            <div class="feature-item">
+                <i class="fa-solid fa-shield-halved"></i>
+                <h3>Warranty Support</h3>
+                <p>Comprehensive warranty support for all our products and services.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/about.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Us</h1>
+                <p>Eddie Bongo Investment is a trusted provider of power saw machines, outboard machines, generator parts, and more. With years of experience, we ensure top-quality products and excellent customer service. Our mission is to provide reliable and durable solutions for all your needs.</p>
+                <p>We pride ourselves on our commitment to quality and customer satisfaction. Our team of experts is always ready to assist you in finding the right products for your specific requirements. Whether you are a contractor, a DIY enthusiast, or a business owner, we have the right tools and parts for you.</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab(event, 'mission')">Our Mission</p>
+                    <p class="tab-links" onclick="opentab(event, 'values')">Our Values</p>
+                    <p class="tab-links" onclick="opentab(event, 'history')">Our History</p>
+                </div>
+                <div class="tab-contents active-tab" id="mission">
+                    <ul>
+                        <li><span>Quality Products</span><br>We provide high-quality machines and parts to meet your needs.</li>
+                        <li><span>Customer Satisfaction</span><br>We prioritize customer satisfaction and strive to exceed expectations.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="values">
+                    <ul>
+                        <li><span>Integrity</span><br>We conduct business with honesty and transparency.</li>
+                        <li><span>Innovation</span><br>We continuously improve our products and services.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="history">
+                    <ul>
+                        <li><span>Established in 2010</span><br>We have been serving customers for over a decade.</li>
+                        <li><span>Expanding Reach</span><br>We now serve customers across the region.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="testimonials">
+    <div class="container">
+        <h1 class="sub-title">What Our Customers Say</h1>
+        <div class="testimonial-list">
+            <div class="testimonial">
+                <div class="testimonial-content">
+                    <i class="fa-solid fa-quote-left"></i>
+                    <p>Eddie Bongo Investment has been our trusted supplier for power saw machines and parts. Their quality products and excellent service have helped our business grow.</p>
+                    <div class="testimonial-author">
+                        <h4>John Kamara</h4>
+                        <p>Construction Company Owner</p>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial">
+                <div class="testimonial-content">
+                    <i class="fa-solid fa-quote-left"></i>
+                    <p>The generator parts I purchased from Eddie Bongo Investment have been reliable and durable. Their technical support is exceptional.</p>
+                    <div class="testimonial-author">
+                        <h4>Sarah Conteh</h4>
+                        <p>Business Owner</p>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial">
+                <div class="testimonial-content">
+                    <i class="fa-solid fa-quote-left"></i>
+                    <p>I've been a customer for over 5 years. Their outboard machines and parts are top quality, and their service is unmatched in Freetown.</p>
+                    <div class="testimonial-author">
+                        <h4>Mohammed Sesay</h4>
+                        <p>Marine Services Provider</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Testimonial Submission Form -->
+        <div class="testimonial-form-container">
+            <h2>Share Your Experience</h2>
+            <form id="testimonialForm" class="testimonial-form">
+                <div class="form-group">
+                    <input type="text" id="testimonialName" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" id="testimonialTitle" placeholder="Your Title/Position" required>
+                </div>
+                <div class="form-group">
+                    <textarea id="testimonialMessage" placeholder="Share your experience with us..." required></textarea>
+                </div>
+                <button type="submit" class="submit-testimonial">Submit Testimonial</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Us</h1>
+                <p><i class="fa-solid fa-paper-plane"></i><strong>eddiebongo343@gmail.com</strong></p>
+                <p><i class="fa-solid fa-phone"></i> +232 72 373 395</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                </div>
+                <div class="shop-gallery">
+                    <h3>Our Shop</h3>
+                    <div class="gallery-container">
+                        <div class="gallery-item">
+                            <img src="images/shop.jpg" alt="Shop Front">
+                            <div class="gallery-caption">Main Shop Front</div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="contact-right">
+                <h1 class="sub-title">Our Location</h1>
+                <div class="location-info">
+                    <div class="map-container">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.6666666666665!2d-13.2333333!3d8.4833333!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zOMKwMjknMDAuMCJOIDEzwrAxNCcwMC4wIlc!5e0!3m2!1sen!2ssl!4v1234567890!5m2!1sen!2ssl" 
+                            width="100%" 
+                            height="300" 
+                            style="border:0; border-radius: 10px;" 
+                            allowfullscreen="" 
+                            loading="lazy">
+                        </iframe>
+                    </div>
+                    <div class="business-details">
+                        <div class="address-section">
+                            <h3><i class="fa-solid fa-location-dot"></i> Main Shop</h3>
+                            <p><strong>15 Goderich Street</strong><br>Freetown, Sierra Leone<br><strong>+23272-372-295<br>+23288-649-444<br>+23279-059-875</strong></p>
+                            <a href="https://maps.google.com/?q=15+Goderich+Street+Freetown+Sierra+Leone" class="direction-link" target="_blank">
+                                <i class="fa-solid fa-directions"></i> Get Directions
+                            </a>
+                            
+                            <h3><i class="fa-solid fa-location-dot"></i> Branch</h3>
+                            <p><strong>No.70 Bai Bureh Road</strong><br>Freetown, Sierra Leone<br><strong>+23233-465-661<br>+23288-204-456</strong></p>
+                            <a href="https://maps.google.com/?q=70+Bai+Bureh+Road+Freetown+Sierra+Leone" class="direction-link" target="_blank">
+                                <i class="fa-solid fa-directions"></i> Get Directions
+                            </a>
+                            
+                            <p><strong>No.1 Konomani Street Kono</strong><br>Freetown, Sierra Leone<br><strong>+23288-390-383</strong></p>
+                            <a href="https://maps.google.com/?q=1+Konomani+Street+Kono+Freetown+Sierra+Leone" class="direction-link" target="_blank">
+                                <i class="fa-solid fa-directions"></i> Get Directions
+                            </a>
+                        </div>
+
+                        <div class="hours-section">
+                            <h3><i class="fa-regular fa-clock"></i> Business Hours</h3>
+                            <div class="hours-grid">
+                                <div class="day">Monday - Friday</div>
+                                <div class="time">7:00 AM - 6:00 PM</div>
+                                
+                                <div class="day">Saturday</div>
+                                <div class="time">7:00 AM - 6:00 PM</div>
+                                
+                                <div class="day">Sunday</div>
+                                <div class="time">Closed</div>
+                            </div>
+                        </div>
+
+                        <div class="contact-buttons">
+                            <a href="https://wa.me/232123456789" class="whatsapp-btn">
+                                <i class="fa-brands fa-whatsapp"></i> Chat with us on WhatsApp
+                            </a>
+                            <a href="https://maps.google.com/?q=15+Goderich+Street+Freetown+Sierra+Leone" class="directions-btn">
+                                <i class="fa-solid fa-directions"></i> Get Directions
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Quick Contact Form -->
+<div class="quick-contact">
+    <h3>Quick Inquiry</h3>
+    <form id="quickContactForm">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="tel" name="phone" placeholder="Your Phone Number" required>
+        <textarea name="message" placeholder="What are you looking for?" required></textarea>
+        <button type="submit">Send Inquiry</button>
+    </form>
+</div>
+
+<!-- Business Hours Banner -->
+<div class="business-hours-banner">
+    <i class="fa-regular fa-clock"></i>
+    <div class="hours-info">
+        <div class="schedule-title">Business Hours</div>
+        <div>Mon-Sat: 7:00 AM - 6:00 PM</div>
+        <div>Sunday: Closed</div>
+    </div>
+</div>
+
+
+<div class="copyright">
+    <p>Copyright © 2023 Eddie Bongo Investment. All rights reserved.</p>
+</div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(event, tabname) {
+        for (var tablink of tablinks) {
+            tablink.classList.remove("active-link");
+        }
+        for (var tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+    var sidemenu = document.querySelector("nav ul");
+    function openmenu() {
+        sidemenu.style.right = "0";
+    }
+    function closemenu() {
+        sidemenu.style.right = "-200px";
+    }
+
+    document.getElementById("seeMoreBtn").addEventListener("click", function () {
+        let hiddenProducts = document.querySelectorAll(".product.hidden");
+        hiddenProducts.forEach(product => {
+            product.classList.remove("hidden");
+        });
+        this.style.display = "none"; 
+    });
+
+    // Initialize EmailJS
+    (function() {
+        emailjs.init("public_key_here"); // We'll add your public key here
+    })();
+
+    // Quick Contact Form
+    document.getElementById('quickContactForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        // Show loading state
+        const submitButton = this.querySelector('button[type="submit"]');
+        const originalText = submitButton.textContent;
+        submitButton.textContent = 'Sending...';
+        submitButton.disabled = true;
+        
+        // Get form data
+        const formData = {
+            from_name: this.querySelector('input[name="name"]').value,
+            phone: this.querySelector('input[name="phone"]').value,
+            message: this.querySelector('textarea[name="message"]').value,
+            to_email: 'eddiebongo343@gmail.com',
+            reply_to: 'eddiebongo343@gmail.com'
+        };
+        
+        // Send email using EmailJS
+        emailjs.send('service_id_here', 'template_id_here', formData)
+            .then(function() {
+                alert('Thank you for your inquiry. We will contact you soon!');
+                document.getElementById('quickContactForm').reset();
+            })
+            .catch(function(error) {
+                alert('Sorry, there was an error sending your message. Please try again later.');
+                console.error('Error:', error);
+            })
+            .finally(function() {
+                // Reset button state
+                submitButton.textContent = originalText;
+                submitButton.disabled = false;
+            });
+    });
+
+    // Testimonial System with localStorage
+    function loadTestimonials() {
+        const savedTestimonials = localStorage.getItem('testimonials');
+        if (savedTestimonials) {
+            const testimonials = JSON.parse(savedTestimonials);
+            const testimonialList = document.querySelector('.testimonial-list');
+            
+            // Clear existing testimonials except the default ones
+            const defaultTestimonials = testimonialList.innerHTML;
+            testimonialList.innerHTML = defaultTestimonials;
+            
+            // Add saved testimonials
+            testimonials.forEach(testimonial => {
+                const newTestimonial = createTestimonialElement(testimonial);
+                testimonialList.insertBefore(newTestimonial, testimonialList.firstChild);
+            });
+        }
+    }
+
+    function saveTestimonial(testimonial) {
+        const savedTestimonials = localStorage.getItem('testimonials');
+        let testimonials = savedTestimonials ? JSON.parse(savedTestimonials) : [];
+        testimonials.unshift(testimonial); // Add new testimonial at the beginning
+        localStorage.setItem('testimonials', JSON.stringify(testimonials));
+    }
+
+    function createTestimonialElement(testimonial) {
+        const newTestimonial = document.createElement('div');
+        newTestimonial.className = 'testimonial';
+        newTestimonial.innerHTML = `
+            <div class="testimonial-content">
+                <i class="fa-solid fa-quote-left"></i>
+                <p>${testimonial.message}</p>
+                <div class="testimonial-author">
+                    <h4>${testimonial.name}</h4>
+                    <p>${testimonial.title}</p>
+                </div>
+            </div>
+        `;
+        return newTestimonial;
+    }
+
+    // Testimonial Form Submission
+    document.getElementById('testimonialForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        const testimonial = {
+            name: document.getElementById('testimonialName').value,
+            title: document.getElementById('testimonialTitle').value,
+            message: document.getElementById('testimonialMessage').value,
+            date: new Date().toISOString()
+        };
+        
+        // Save to localStorage
+        saveTestimonial(testimonial);
+        
+        // Add to page
+        const newTestimonial = createTestimonialElement(testimonial);
+        document.querySelector('.testimonial-list').insertBefore(newTestimonial, document.querySelector('.testimonial-list').firstChild);
+        
+        // Reset the form
+        this.reset();
+        
+        // Show success message
+        alert('Thank you for sharing your experience!');
+    });
+
+    // Load testimonials when page loads
+    document.addEventListener('DOMContentLoaded', loadTestimonials);
+
+    // Navigation Scroll Effect
+    window.addEventListener('scroll', function() {
+        const nav = document.querySelector('nav');
+        if (window.scrollY > 50) {
+            nav.classList.add('scrolled');
+        } else {
+            nav.classList.remove('scrolled');
+        }
+    });
+</script>
+
+
+</body>
+</html> 
